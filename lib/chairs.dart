@@ -119,7 +119,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   // ignore: unnecessary_statements
                                   appState.chairs[0].selected !=  appState.chairs[0].selected;
                                 }) : null;
-                                print( appState.chairs[0].selected);
+
                               },
                               child: Stack(
                                 children: <Widget>[
@@ -161,7 +161,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   // ignore: unnecessary_statements
                                   appState.chairs[2].selected !=  appState.chairs[2].selected;
                                 }) : null;
-                                print( appState.chairs[2].selected);
+
                               },
                               child: Stack(
                                 children: <Widget>[
@@ -195,8 +195,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[3].selected =  !appState.chairs[3].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[3].selected);
+
 
                               },
                               child: Stack(
@@ -233,8 +232,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[4].selected =  !appState.chairs[4].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[4].selected);
+
 
                               },
                               child: Stack(
@@ -277,8 +275,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[5].selected =  !appState.chairs[5].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[5].selected);
+
 
                               },
                               child: Stack(
@@ -314,8 +311,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[6].selected =  !appState.chairs[6].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[6].selected);
+
 
                               },
                               child: Stack(
@@ -351,8 +347,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[7].selected =  !appState.chairs[7].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[7].selected);
+
 
                               },
                               child: Stack(
@@ -393,8 +388,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[8].selected =  !appState.chairs[8].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[8].selected);
+
 
                               },
                               child: Stack(
@@ -429,8 +423,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[9].selected =  !appState.chairs[9].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[9].selected);
+
 
                               },
                               child: Stack(
@@ -468,8 +461,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[10].selected =  !appState.chairs[10].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[10].selected);
+
 
                               },
                               child: Stack(
@@ -513,8 +505,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[11].selected =  !appState.chairs[11].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[11].selected);
+
 
                               },
                               child: Stack(
@@ -550,8 +541,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[12].selected =  !appState.chairs[12].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[12].selected);
+
 
                               },
                               child: Stack(
@@ -586,8 +576,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[13].selected =  !appState.chairs[13].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[13].selected);
+
 
                               },
                               child: Stack(
@@ -609,6 +598,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                               ),
                             ),
                             SizedBox(width: 30,),
+
+
+//  Seat Fifteen
                             InkWell(
 
                               onTap: (){
@@ -621,8 +613,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 av ?  setState(() {
                                   appState.chairs[14].selected =  !appState.chairs[14].selected;
                                 }) : null;
-                                print(av);
-                                print( appState.chairs[14].selected);
+
 
                               },
                               child: Stack(
@@ -711,7 +702,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                 child: RaisedButton(
 
                   onPressed: () {
-                    appState.selected.length == 0  ?   _scaffoldKey.currentState.showSnackBar(SnackBar(content:  Text("Please pick a seat"), backgroundColor: Colors.red,)):  continues(context) ;
+                    appState.selected.length == 0  ?snack() :  continues(context) ;
     },
                     child:  Text(
                       "Continue".toUpperCase(),
@@ -742,21 +733,17 @@ return     Image.asset("images/white.png");
 
 
 
- pressi() {
-  print(" nooooo");
-}
+
 
   void add(whole) {
     setState(() {
-
-
     if (appState.selected.contains(whole)){
       appState.selected.remove(whole);
     }else{
       appState.selected.add(whole);
     }
     });
-    print("length${appState.selected.length}");
+
   }
 
 
@@ -781,6 +768,11 @@ return     Image.asset("images/white.png");
     Navigator.push(context, MaterialPageRoute(builder: (context)=> Test()));
   }
 
+  snack(){
+    return _scaffoldKey.currentState.showSnackBar(SnackBar(content:  Text("Please pick a seat"), backgroundColor: Colors.red,   duration: Duration(
+      seconds: 2,
+    )));
+  }
 
 }
 
