@@ -57,15 +57,6 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
 
                               Spacer(),
 
-
-
-
-
-
-
-
-
-
 //seat TWO
 
                               InkWell(
