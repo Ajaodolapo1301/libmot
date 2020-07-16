@@ -2,13 +2,17 @@
 
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:libmot/model/chairs.dart';
 
 class AppState with ChangeNotifier{
 
+
+
+//  mimmicks  the database
+
+
   List<Chairs> chairs = [
-//    0
     Chairs(
       id: 0,
       available: false,
@@ -17,9 +21,9 @@ class AppState with ChangeNotifier{
     ),
 
 
-//    1
+
     Chairs(
-//
+
       id: 1,
       available: true,
         selected: false
