@@ -24,7 +24,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
 
       key: _scaffoldKey,
-//      backgroundColor: Colors.black12.withOpacity(0.8),
+
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text("Select Seat(s)", style: TextStyle(color: Colors.black),),
