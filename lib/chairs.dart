@@ -50,8 +50,8 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
 
 
                               Container(
-                                height: 50,
-                                width: 50,
+                                height: 40,
+                                width: 40,
                                 child: Image.asset("images/steering.png"),
                               ),
 
@@ -79,9 +79,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[1].available  ?  press(appState.chairs[1].id) :  grey()
                                     ),
 
@@ -120,9 +120,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 child: Stack(
                                   children: <Widget>[
                                     Container(
-                                        height: 50,
-                                        color:  appState.chairs[0].selected ? Colors.green : Colors.white,
-                                        width: 50,
+                                        height: 40,
+
+                                        width: 40,
                                         child:  appState.chairs[0].available ? press(appState.chairs[0].id) : grey( )
                                     ),
 
@@ -139,6 +139,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                           ),
                           SizedBox(height: 30,),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
 
 
@@ -162,8 +163,8 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 child: Stack(
                                   children: <Widget>[
                                     Container(
-                                        height: 50,
-                                        width: 50,
+                                        height: 40,
+                                        width: 40,
                                         child:  appState.chairs[2].available ? press(appState.chairs[2].id) :   grey( )
                                     ),
 
@@ -175,7 +176,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   ],
                                 ),
                               ),
-                              SizedBox(width: 45,),
+
 
 // SEAT FOUR
                               InkWell(
@@ -197,9 +198,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[3].available  ?  press(appState.chairs[3].id) :   grey( )
                                     ),
 
@@ -211,7 +212,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   ],
                                 ),
                               ),
-                              SizedBox(width: 35,),
+
 
 
 //Seat FIVE
@@ -234,9 +235,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[4].available  ?  press(appState.chairs[4].id) :   grey( )
                                     ),
 
@@ -249,13 +250,14 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 ),
                               ),
 
-
+                              SizedBox(width: 45,),
 
                             ],
                           ),
 
                           SizedBox(height: 30,),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
 // SEAT SIX
                               InkWell(
@@ -276,9 +278,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[5].available  ?  press(appState.chairs[5].id) :   grey( )
                                     ),
 
@@ -312,9 +314,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[6].available  ?  press(appState.chairs[6].id) :   grey( )
                                     ),
 
@@ -348,9 +350,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[7].available  ?  press(appState.chairs[7].id) :   grey( )
                                     ),
 
@@ -368,6 +370,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
 
                           SizedBox(height: 30,),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
 //   SEAT NINE
                               InkWell(
@@ -389,9 +392,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[8].available  ?  press(appState.chairs[8].id) :   grey( )
                                     ),
 
@@ -423,9 +426,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[9].available  ?  press(appState.chairs[9].id) :   grey( )
                                     ),
 
@@ -461,9 +464,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[10].available  ?  press(appState.chairs[10].id) :   grey( )
                                     ),
 
@@ -482,46 +485,45 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
 
                           SizedBox(height: 30,),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
 
 //  Seat Twelve
 
-                              Expanded(
-                                child: InkWell(
+                              InkWell(
 
-                                  onTap: (){
-                                    var av =    appState.chairs[11].available;
+                                onTap: (){
+                                  var av =    appState.chairs[11].available;
 
-                                    av ?   add(appState.chairs[11]) : Container();
+                                  av ?   add(appState.chairs[11]) : Container();
 
-                                    av ? press(appState.chairs[11].id) : Container();
+                                  av ? press(appState.chairs[11].id) : Container();
 
-                                    av ?  setState(() {
-                                      appState.chairs[11].selected =  !appState.chairs[11].selected;
-                                    }) : Container();
+                                  av ?  setState(() {
+                                    appState.chairs[11].selected =  !appState.chairs[11].selected;
+                                  }) : Container();
 
 
-                                  },
-                                  child: Stack(
-                                    children: <Widget>[
-                                      Container(
+                                },
+                                child: Stack(
+                                  children: <Widget>[
+                                    Container(
 
-                                          height: 50,
+                                        height: 40,
 
-                                          width: 50,
-                                          child:  appState.chairs[11].available  ?  press(appState.chairs[11].id) :   grey( )
-                                      ),
+                                        width: 40,
+                                        child:  appState.chairs[11].available  ?  press(appState.chairs[11].id) :   grey( )
+                                    ),
 
-                                      Positioned.fill(
+                                    Positioned.fill(
 
-                                          child: Align(
-                                              alignment: Alignment.center,
-                                              child: Text((appState.chairs[11].id + 1 ).toString(),  style: TextStyle(color: appState.chairs[11].available ?  Colors.black: Colors.white),)))
-                                    ],
-                                  ),
+                                        child: Align(
+                                            alignment: Alignment.center,
+                                            child: Text((appState.chairs[11].id + 1 ).toString(),  style: TextStyle(color: appState.chairs[11].available ?  Colors.black: Colors.white),)))
+                                  ],
                                 ),
                               ),
-                              SizedBox(width: 45,),
+
 
 //  Seat Thirteen
                               InkWell(
@@ -543,9 +545,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[12].available  ?  press(appState.chairs[12].id) :   grey( )
                                     ),
 
@@ -557,7 +559,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   ],
                                 ),
                               ),
-                              SizedBox(width: 45,),
+
 //  Seat fourteen
                               InkWell(
 
@@ -578,9 +580,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[13].available  ?  press(appState.chairs[13].id) :   grey( )
                                     ),
 
@@ -592,7 +594,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   ],
                                 ),
                               ),
-                              SizedBox(width: 30,),
+
 
 
 //  Seat Fifteen
@@ -615,9 +617,9 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   children: <Widget>[
                                     Container(
 
-                                        height: 50,
+                                        height: 40,
 
-                                        width: 50,
+                                        width: 40,
                                         child:  appState.chairs[14].available  ?  press(appState.chairs[14].id) :   grey( )
                                     ),
 
