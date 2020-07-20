@@ -369,6 +369,8 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                           ),
 
                           SizedBox(height: 30,),
+
+
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
@@ -573,8 +575,6 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                   av ?  setState(() {
                                     appState.chairs[13].selected =  !appState.chairs[13].selected;
                                   }) : Container();
-
-
                                 },
                                 child: Stack(
                                   children: <Widget>[
