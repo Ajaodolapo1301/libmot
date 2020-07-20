@@ -20,8 +20,6 @@ class AppState with ChangeNotifier{
       selected: false
     ),
 
-
-
     Chairs(
 
       id: 1,

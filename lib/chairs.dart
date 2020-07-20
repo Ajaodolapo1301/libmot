@@ -579,10 +579,8 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                 child: Stack(
                                   children: <Widget>[
                                     Container(
-
                                         height: 40,
-
-                                        width: 40,
+                                        width:40,
                                         child:  appState.chairs[13].available  ?  press(appState.chairs[13].id) :   grey( )
                                     ),
 
@@ -620,7 +618,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                                         height: 40,
 
                                         width: 40,
-                                        child:  appState.chairs[14].available  ?  press(appState.chairs[14].id) :   grey( )
+                                        child:  appState.chairs[14].available  ?  press(appState.chairs[14].id) :  grey()
                                     ),
 
                                     Positioned.fill(
@@ -685,31 +683,22 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
 
 
 
-            Padding(
-              padding: const EdgeInsets.only(left: 40, bottom: 30, right: 40),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: ButtonTheme(
-               disabledColor:   Colors.grey ,
-                  buttonColor: Colors.red,
-                  minWidth: double.infinity,
-                  height: 45,
+            Container(
+              height: 45,
+              width: 250,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: RaisedButton(
+                color:  Colors.red,
+                onPressed: () {
+                  appState.selected.length == 0  ?snack() :  continues(context) ;
+                 },
+                  child:  Text(
+                    "Continue".toUpperCase(),
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  )
 
-                  child: RaisedButton(
-
-                    onPressed: () {
-                      appState.selected.length == 0  ?snack() :  continues(context) ;
-    },
-                      child:  Text(
-                        "Continue".toUpperCase(),
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                      )
-//                      :CircularProgressIndicator(
-//                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),)
-                  ),
-                ),
               ),
             ),
 
@@ -737,34 +726,20 @@ grey(){
 
 
 
-  void add(whole) {
+  void add(chair) {
     setState(() {
-    if (appState.selected.contains(whole)){
-      appState.selected.remove(whole);
+    if (appState.selected.contains(chair)){
+      appState.selected.remove(chair);
     }else{
-      appState.selected.add(whole);
+      appState.selected.add(chair);
     }
     });
 
   }
 
 
-//Widget unavai () {
-//  if (appState.chairs[appState.chairs[0].id].available) {
-//    return appState.chairs[0].image;
-//  } else {
-//    Image.asset("images/black.png");
-//  }
-//}
-//
-//
-//Widget avai () {
-//  if (appState.chairs[0].selected ) {
-//    return Image.asset("images/white.png");
-//  } else {
-//    Image.asset("images/black.png");
-//  }
-//}
+
+
 
   void continues(context){
     Navigator.push(context, MaterialPageRoute(builder: (context)=> Test()));
