@@ -44,6 +44,7 @@ final _scaffoldKey = GlobalKey<ScaffoldState>();
                     child: Padding(
                       padding: const EdgeInsets.all(25.0),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Row(
                             children: <Widget>[
